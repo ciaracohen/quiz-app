@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      type="A quiz about different animal's uncommon facts."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Animal Quiz</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <main class="quizBody">
+      <!--Start Page Wireframe-->
+      <section class="quiz-start-window">
+        <h1>Animal Quiz</h1>
+        <button class="button begin-quiz">Begin</button>
+      </section>
+
+      <!--Question Page Wireframe-->
+      <form id="quiz-question-page" class="quiz-window">
+        <div class="progress">
+          <span class="quiz-progress">Question 1 out of 10</span>
+          <span class="score">Your Score:0 out of 10 correct</span>
+        </div>
+        <fieldset>
+          <legend><h2>What animal has the longest lifespan?</h2></legend>
+
+          <label for="radio">
+            <input type="radio" name="radio" id="radio" />
+            Giant Tortoise
+          </label>
+
+          <label for="radio">
+            <input type="radio" name="radio" id="radio" />
+            Blue Whale
+          </label>
+
+          <label for="radio">
+            <input type="radio" name="radio" id="radio" />
+            The Honey Bee
+          </label>
+
+          <label for="radio">
+            <input type="radio" name="radio" id="radio" />
+            Elephant
+          </label>
+          <button class="button submit-button">Submit</button>
+        </fieldset>
+      </form>
+
+      <!--Results-Correct-->
+      <form id="quiz-question-correct" class="quiz-window">
+        <div class="progress">
+          <span class="quiz-progress">Question 1 out of 10</span>
+          <span class="score">Your Score: 1 out of 10 correct</span>
+        </div>
+        <fieldset>
+          <legend><h2>Correct!</h2></legend>
+          <button class="button next-button">Next</button>
+        </fieldset>
+      </form>
+
+      <!-- Results - Inorrect -->
+      <form method="#" id="quiz-question-incorrect" class="quiz-window col-8">
+        <div class="progress">
+          <span class="quiz-progress">Question 1 out of 10</span>
+          <span class="score">Your Score: 0 out of 10 correct</span>
+        </div>
+        <fieldset>
+          <legend><h2>Incorrect!</h2></legend>
+          <div class="correct-answer">
+            <p>The correct answer is: <b>_______________</b></p>
+          </div>
+          <button class="button next-button">Next</button>
+        </fieldset>
+      </form>
+
+      <!--Results-End-Quiz-->
+      <form id="quiz-end" class="quiz-window">
+        <fieldset>
+          <legend><h2>End Of Quiz!</h2></legend>
+          <div class="results-page">
+            <p>Your Score Is: <b>_______________</b></p>
+            <h3 class="button restart-quiz">Restart Quiz</h3>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
